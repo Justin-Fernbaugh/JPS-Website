@@ -3669,11 +3669,11 @@
 		#banner h1 {
 			font-size: 4em;
 			margin-bottom: .25em;
-			color: #d34836;
+			color: #000000;
 		}
 
 		#banner p {
-			color: #000000;
+			color: #d34836;
 			font-size: 1.5em;
 		}
 
