@@ -142,6 +142,22 @@
 				});
 			}
 
+			var isOldTitle = true;
+			var oldTitle = "JPS";
+			var newTitle = "JPS_";
+			var interval = null;
+			function changeTitle() {
+				document.title = isOldTitle ? oldTitle : newTitle;
+				isOldTitle = !isOldTitle;
+			}
+			interval = setInterval(changeTitle, 800);
+
+			$(window).focus(function () {
+				clearInterval(interval);
+				$("title").text(oldTitle);
+			});
+
+
 	});
 
 })(jQuery);
